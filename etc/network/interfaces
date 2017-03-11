@@ -1,0 +1,14 @@
+# The loopback network interface
+auto lo
+iface lo inet loopback
+
+auto eth0
+iface eth0 inet static
+        address 151.80.119.160
+        netmask 255.255.255.255
+        post-up /sbin/ip route add 151.80.119.1 dev eth0
+        post-up /sbin/ip route add default via 151.80.119.1
+        pre-down /sbin/ip route del default via 151.80.119.1
+        pre-down /sbin/ip route del 151.80.119.1 dev eth0
+	dns-nameserver 213.186.33.99
+        dns-search ovh.net

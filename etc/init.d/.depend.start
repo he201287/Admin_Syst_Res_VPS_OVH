@@ -1,0 +1,15 @@
+TARGETS = rsyslog landscape-client open-vm-tools uuidd dns-clean killprocs apport cgroupfs-mount irqbalance atd single cron rsync acpid ssh dbus docker grub-common rc.local ondemand
+INTERACTIVE =
+cgroupfs-mount: rsyslog
+irqbalance: rsyslog
+atd: rsyslog
+single: killprocs dns-clean
+cron: rsyslog
+rsync: rsyslog
+acpid: rsyslog
+ssh: rsyslog
+dbus: rsyslog
+docker: rsyslog cgroupfs-mount
+grub-common: docker rsyslog cgroupfs-mount landscape-client irqbalance atd open-vm-tools uuidd dns-clean apport cron rsync acpid ssh dbus
+rc.local: docker rsyslog cgroupfs-mount landscape-client irqbalance atd open-vm-tools uuidd dns-clean apport cron rsync acpid ssh dbus
+ondemand: docker rsyslog cgroupfs-mount landscape-client irqbalance atd open-vm-tools uuidd dns-clean apport cron rsync acpid ssh dbus

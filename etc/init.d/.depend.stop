@@ -1,0 +1,13 @@
+TARGETS = unattended-upgrades landscape-client open-vm-tools uuidd irqbalance atd resolvconf ufw docker urandom cgroupfs-mount sendsigs rsyslog umountnfs.sh hwclock.sh networking umountfs cryptdisks cryptdisks-early umountroot halt reboot
+cgroupfs-mount: docker
+sendsigs: docker landscape-client irqbalance atd open-vm-tools unattended-upgrades cgroupfs-mount uuidd
+rsyslog: docker sendsigs irqbalance atd cgroupfs-mount
+umountnfs.sh: docker rsyslog landscape-client irqbalance atd sendsigs open-vm-tools unattended-upgrades cgroupfs-mount uuidd
+hwclock.sh: rsyslog atd uuidd
+networking: umountnfs.sh
+umountfs: docker landscape-client irqbalance atd open-vm-tools hwclock.sh unattended-upgrades resolvconf umountnfs.sh cgroupfs-mount networking uuidd urandom
+cryptdisks: umountfs
+cryptdisks-early: umountfs cryptdisks
+umountroot: umountfs cryptdisks-early cryptdisks
+halt: umountroot
+reboot: umountroot
