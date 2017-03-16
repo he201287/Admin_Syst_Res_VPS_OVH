@@ -1,0 +1,15 @@
+$ttl 43200
+wt1.ephec-ti.be.	IN	SOA	ns.wt1.ephec-ti.be. j.bonhomme.students.ephec.be. (
+			2017031201			; Serial
+			10800				; Refresh
+			3600				; Retry
+			604800				; Expire
+			43200 )				; Negative Cache TTL
+wt1.ephec-ti.be.	IN	NS	ns.wt1.ephec-ti.be.
+ns.wt1.ephec-ti.be.	IN	A	151.80.119.160
+webserver.wt1.ephec-ti.be.	IN	A	151.80.119.160
+www.wt1.ephec-ti.be.	IN	CNAME	webserver
+b2bserver.wt1.ephec-ti.be.	IN	A	151.80.119.160
+b2b.wt1.ephec-ti.be.	IN	CNAME	b2bserver
+intranetserver.wt1.ephec-ti.be.	IN	A	151.80.119.160
+intranet.wt1.ephec-ti.be.	IN	CNAME	intranetserver
