@@ -1,0 +1,50 @@
+[Mon Mar 13 09:47:59.586242 2017] [ssl:warn] [pid 8] AH01909: 172.17.0.2:443:0 server certificate does NOT include an ID which matches the server name
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+[Mon Mar 13 09:47:59.633272 2017] [ssl:warn] [pid 8] AH01909: 172.17.0.2:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Mar 13 09:47:59.636879 2017] [mpm_prefork:notice] [pid 8] AH00163: Apache/2.4.10 (Debian) OpenSSL/1.0.1t configured -- resuming normal operations
+[Mon Mar 13 09:47:59.636911 2017] [core:notice] [pid 8] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Mon Mar 13 10:04:56.729782 2017] [ssl:warn] [pid 9] AH01909: 172.17.0.2:443:0 server certificate does NOT include an ID which matches the server name
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+[Mon Mar 13 10:04:56.778227 2017] [ssl:warn] [pid 9] AH01909: 172.17.0.2:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Mar 13 10:04:56.782074 2017] [mpm_prefork:notice] [pid 9] AH00163: Apache/2.4.10 (Debian) OpenSSL/1.0.1t configured -- resuming normal operations
+[Mon Mar 13 10:04:56.782127 2017] [core:notice] [pid 9] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Mon Mar 13 10:49:37.659809 2017] [ssl:warn] [pid 8] AH01909: 172.17.0.2:443:0 server certificate does NOT include an ID which matches the server name
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+[Mon Mar 13 10:49:37.711069 2017] [ssl:warn] [pid 8] AH01909: 172.17.0.2:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Mar 13 10:49:37.711217 2017] [core:warn] [pid 8] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Mar 13 10:49:37.716046 2017] [mpm_prefork:notice] [pid 8] AH00163: Apache/2.4.10 (Debian) OpenSSL/1.0.1t configured -- resuming normal operations
+[Mon Mar 13 10:49:37.716104 2017] [core:notice] [pid 8] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Mon Mar 13 10:54:41.115251 2017] [mpm_prefork:notice] [pid 8] AH00171: Graceful restart requested, doing restart
+AH00112: Warning: DocumentRoot [/var/www/b2b.wt1.ephec-ti.be/public_html] does not exist
+AH00112: Warning: DocumentRoot [/var/www/intranet.wt1.ephec-ti.be/public_html] does not exist
+AH00112: Warning: DocumentRoot [/var/www/wt1.ephec-ti.be/public_html] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+[Mon Mar 13 10:54:41.211891 2017] [ssl:warn] [pid 8] AH01909: 172.17.0.2:443:0 server certificate does NOT include an ID which matches the server name
+[Mon Mar 13 10:54:41.212850 2017] [mpm_prefork:notice] [pid 8] AH00163: Apache/2.4.10 (Debian) OpenSSL/1.0.1t configured -- resuming normal operations
+[Mon Mar 13 10:54:41.212859 2017] [core:notice] [pid 8] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Wed Mar 15 21:09:16.494295 2017] [:error] [pid 86] [client 189.101.151.178:38525] script '/var/www/html/command.php' not found or unable to stat
+[Thu Mar 16 16:07:52.089145 2017] [mpm_prefork:notice] [pid 8] AH00171: Graceful restart requested, doing restart
+AH00112: Warning: DocumentRoot [/var/www/b2b.wt1.ephec-ti.be/public_html] does not exist
+AH00112: Warning: DocumentRoot [/var/www/intranet.wt1.ephec-ti.be/public_html] does not exist
+AH00112: Warning: DocumentRoot [/var/www/wt1.ephec-ti.be/public_html] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+[Thu Mar 16 16:07:52.249090 2017] [ssl:warn] [pid 8] AH01909: 172.17.0.2:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Mar 16 16:07:52.249504 2017] [mpm_prefork:notice] [pid 8] AH00163: Apache/2.4.10 (Debian) OpenSSL/1.0.1t configured -- resuming normal operations
+[Thu Mar 16 16:07:52.249513 2017] [core:notice] [pid 8] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Thu Mar 16 16:24:02.347819 2017] [ssl:warn] [pid 13] AH01909: 172.17.0.2:443:0 server certificate does NOT include an ID which matches the server name
+AH00112: Warning: DocumentRoot [/var/www/b2b.wt1.ephec-ti.be/public_html] does not exist
+AH00112: Warning: DocumentRoot [/var/www/intranet.wt1.ephec-ti.be/public_html] does not exist
+AH00112: Warning: DocumentRoot [/var/www/wt1.ephec-ti.be/public_html] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+[Thu Mar 16 16:24:02.473656 2017] [ssl:warn] [pid 13] AH01909: 172.17.0.2:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Mar 16 16:24:02.473875 2017] [core:warn] [pid 13] AH00098: pid file /var/run/apache2/apache2.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Mar 16 16:24:02.482110 2017] [mpm_prefork:notice] [pid 13] AH00163: Apache/2.4.10 (Debian) OpenSSL/1.0.1t configured -- resuming normal operations
+[Thu Mar 16 16:24:02.482179 2017] [core:notice] [pid 13] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
+[Thu Mar 16 16:28:34.636555 2017] [ssl:warn] [pid 8] AH01909: 172.17.0.2:443:0 server certificate does NOT include an ID which matches the server name
+AH00112: Warning: DocumentRoot [/var/www/b2b.wt1.ephec-ti.be/public_html] does not exist
+AH00112: Warning: DocumentRoot [/var/www/intranet.wt1.ephec-ti.be/public_html] does not exist
+AH00112: Warning: DocumentRoot [/var/www/wt1.ephec-ti.be/public_html] does not exist
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.2. Set the 'ServerName' directive globally to suppress this message
+[Thu Mar 16 16:28:34.737758 2017] [ssl:warn] [pid 8] AH01909: 172.17.0.2:443:0 server certificate does NOT include an ID which matches the server name
+[Thu Mar 16 16:28:34.742476 2017] [mpm_prefork:notice] [pid 8] AH00163: Apache/2.4.10 (Debian) OpenSSL/1.0.1t configured -- resuming normal operations
+[Thu Mar 16 16:28:34.742514 2017] [core:notice] [pid 8] AH00094: Command line: '/usr/sbin/apache2 -D FOREGROUND'
