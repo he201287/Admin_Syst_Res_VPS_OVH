@@ -1070,13 +1070,24 @@ http_access deny to_localhost
 # INSERT YOUR OWN RULE(S) HERE TO ALLOW ACCESS FROM YOUR CLIENTS
 #
 
-# Example rule allowing access from your local networks.
-# Adapt localnet in the ACL section to list your (internal) IP networks
-# from where browsing should be allowed
+auth_param basic program /usr/lib/squid3/basic_ncsa_auth /etc/squid3/utils
+
+acl deny_accesses dstdomain "/etc/squid3/acl/denyaccesses.acl"
+acl ncsa_users proxy_auth REQUIRED
+## acl openHours time MTWHF 01:00-23:00
+
+http_access deny deny_accesses
+http_access deny all ncsa_users
+
+## Example rule allowing access from your local networks.
+## Adapt localnet in the ACL section to list your (internal) IP networks
+## from where browsing should be allowed
+
 http_access allow localnet
 http_access allow localhost
 
 # And finally deny all other access to this proxy
+
 http_access deny all
 
 #  TAG: adapted_http_access
@@ -1252,8 +1263,7 @@ http_access deny all
 # NETWORK OPTIONS
 # -----------------------------------------------------------------------------
 
-#  TAG: 
-http_port
+#  TAG: http_port
 #	Usage:	port [mode] [options]
 #		hostname:port [mode] [options]
 #		1.2.3.4:port [mode] [options]
