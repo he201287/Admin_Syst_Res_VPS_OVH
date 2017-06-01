@@ -1,0 +1,35 @@
+options {
+	directory "/var/cache/bind";
+
+	// If there is a firewall between you and nameservers you want
+	// to talk to, you may need to fix the firewall to allow multiple
+	// ports to talk.  See http://www.kb.cert.org/vuls/id/800113
+
+	// If your ISP provided one or more IP addresses for stable 
+	// nameservers, you probably want to use them as forwarders.  
+	// Uncomment the following block, and insert the addresses replacing 
+	// the all-0's placeholder.
+	// Forwarders but : Limiter le traffic DNS off-site. 
+	// Rediriger la resolution de nom. 
+	// Le serveur va envoyer toutes les requetes au forwarder en premier.
+	forwarders {
+	 	0.0.0.0;
+		8.8.8.8;
+		8.8.4.4;
+	};
+
+	//========================================================================
+	// If BIND logs error messages about the root key being expired,
+	// you will need to update your keys.  See https://www.isc.org/bind-keys
+	//========================================================================
+	// Va decider automatiquement si un resolveur va essayer de valider 
+	// les reponses des zones ou DNSSEC est enabled
+	dnssec-validation auto;
+
+	// Signifie qu'il n'y a pas de serveur par defaut
+	// si le domaine n'existe pas
+	auth-nxdomain no;    # conform to RFC1035
+	// active l'IPv6
+	listen-on-v6 { any; };
+};
+

@@ -1,0 +1,11 @@
+//
+// Do any local configuration here
+//
+zone "wt1.ephec-ti.be" {
+	type master;
+	file "/var/lib/bind/wt1.ephec-ti.be.hosts";
+	};
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+

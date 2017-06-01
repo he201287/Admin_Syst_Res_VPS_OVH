@@ -1,0 +1,13 @@
+##configuration: IMAP
+poll mail.wt1.ephec-ti.be proto imap
+	user '***'
+	pass '***'
+	is 'contact@wt1.ephec-ti.be'
+	ssl
+
+## Example configuration: POP3
+poll mail.wt1.ephec-ti.be proto POP3
+	user '***' there with
+	password '***'
+	is 'contact1@wt1.ephec-ti.be'
+	ssl
