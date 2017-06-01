@@ -16,9 +16,9 @@
                                         return $out;
                                 }
                                 $dbname="wt1_db";
-                                $dataSrc = "mysql:host=151.80.119.160; dbname=$dbname";
+                                $dataSrc = "mysql:host=***.***.***.***; dbname=$dbname";
                                 $slqRequ = "SELECT * FROM tbEmployee;";
-                                $connexion = new PDO($dataSrc, "Admin", "Admin@passWord66");
+                                $connexion = new PDO($dataSrc, "*****", "I*****");
 
                                 foreach($connexion->query($slqRequ, PDO::FETCH_ASSOC) as $print) {
                                         echo monPrint_r($print);
