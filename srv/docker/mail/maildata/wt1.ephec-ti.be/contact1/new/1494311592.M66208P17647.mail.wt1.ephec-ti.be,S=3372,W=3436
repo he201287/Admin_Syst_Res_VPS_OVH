@@ -1,0 +1,64 @@
+Return-Path: <he201287@gmail.com>
+Delivered-To: contact1@wt1.ephec-ti.be
+Received: from mail.wt1.ephec-ti.be
+	by mail.wt1.ephec-ti.be (Dovecot) with LMTP id 6PvQA6hiEVnvRAAAUOefaQ
+	for <contact1@wt1.ephec-ti.be>; Tue, 09 May 2017 06:33:12 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by mail.wt1.ephec-ti.be (Postfix) with ESMTP id 0316E5E0F26
+	for <contact1@wt1.ephec-ti.be>; Tue,  9 May 2017 06:33:12 +0000 (UTC)
+Authentication-Results: mail.wt1.ephec-ti.be (amavisd-new);
+	dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.wt1.ephec-ti.be ([127.0.0.1])
+	by localhost (mail.wt1.ephec-ti.be [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id M3DCLBuviYDb for <contact1@wt1.ephec-ti.be>;
+	Tue,  9 May 2017 06:33:11 +0000 (UTC)
+Received-SPF: Pass (sender SPF authorized) identity=mailfrom; client-ip=74.125.82.51; helo=mail-wm0-f51.google.com; envelope-from=he201287@gmail.com; receiver=contact1@wt1.ephec-ti.be 
+Received: from mail-wm0-f51.google.com (mail-wm0-f51.google.com [74.125.82.51])
+	by mail.wt1.ephec-ti.be (Postfix) with ESMTPS id B3D9E5E0F0F
+	for <contact1@wt1.ephec-ti.be>; Tue,  9 May 2017 06:33:11 +0000 (UTC)
+Received: by mail-wm0-f51.google.com with SMTP id 142so88796179wma.1
+        for <contact1@wt1.ephec-ti.be>; Mon, 08 May 2017 23:33:11 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=ehGN6SP/76gSnfUZALTFLLObtmj/M9DAp/uEA17MZn0=;
+        b=TQnfMGH/ulyxqna1gj4oCmgRpvynt/S+d0wi5sqH9jSaLaJ3ABQRLhy0UAlDkrrFD/
+         H0P8dNQZwTnrVOW6C10xKs6YqoTiV+irzyYDhSqM8jxIHUln3oejhmYx+3J3KLLwGcin
+         GUHdbUOlS4hXDaxwIAocTHmpl+pxDfWWwX1HSeuxBMCLQE261D8uX2NHHhDRcrKQOFpA
+         Bl1VzizxJy1V3xqiHDDobjAhgjwzI+hWokwgNoh8/DwUexgNOgvxUzudrglvOGb+RXhn
+         vqC3hfljmYH4tFxILKognHO/TIbcWsDWLQ3NpxfB/5eq3FxVXvcagduziQL5DXsmnPOa
+         t5Qg==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=ehGN6SP/76gSnfUZALTFLLObtmj/M9DAp/uEA17MZn0=;
+        b=HietQpd5BqXXXC5xpcwblQPUYVpPXoUbYga8P2JVc9nLuwuj5Kx8TABeSOMdzQ6Bf3
+         erfrN1Hx35Hl979AUEk9y8SdlHV9+xldRiCKtc2ORTOOzE/NUD3BYZh7w9JoUlesNkZ9
+         Jx1uiI/Bm5P9g4A1TjFqa70/19YdKr+WcOCpz++mql+tKlTcZLC9YZRfIrZp+g4FWcfg
+         MAE0GZZjTHFmT6DH0OKJ7sz/GthfKO3TJ6pS3K/md7v3CQHjDVKURrXEz9Ixn4gU8R3Q
+         0d1zlMA6tIOIguE5w5Exhp73xSUGxY3U9sVGztkwKJz0KL3MojxKvuDHa0hxvFMS0KAN
+         4/LA==
+X-Gm-Message-State: AODbwcC5MM2nrPjrF7h6igWqJhIXbdHWzjrcueAXHyStCofOlJyWy6UO
+	oGd1ptW/czqCHlb+99G+zho8jTprHg==
+X-Received: by 10.80.136.229 with SMTP id d92mr7360213edd.119.1494311591180;
+ Mon, 08 May 2017 23:33:11 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.80.165.74 with HTTP; Mon, 8 May 2017 23:33:10 -0700 (PDT)
+From: J-b Bonh <he201287@gmail.com>
+Date: Tue, 9 May 2017 08:33:10 +0200
+Message-ID: <CAP943mDENP4W96TxBJqcAq4r6PT5DsWQ_oNUobH6j_-iiR_n1Q@mail.gmail.com>
+Subject: TESTRE_08_32
+To: contact1@wt1.ephec-ti.be
+Content-Type: multipart/alternative; boundary=94eb2c1962849380a4054f118767
+
+--94eb2c1962849380a4054f118767
+Content-Type: text/plain; charset=UTF-8
+
+HELLORE32
+
+--94eb2c1962849380a4054f118767
+Content-Type: text/html; charset=UTF-8
+
+<div dir="ltr">HELLORE32<div><br></div></div>
+
+--94eb2c1962849380a4054f118767--

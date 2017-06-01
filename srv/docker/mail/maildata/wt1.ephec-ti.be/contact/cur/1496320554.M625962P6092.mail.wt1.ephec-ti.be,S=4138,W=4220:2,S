@@ -1,0 +1,82 @@
+Return-Path: <he201287@gmail.com>
+Delivered-To: contact@wt1.ephec-ti.be
+Received: from mail.wt1.ephec-ti.be
+	by mail.wt1.ephec-ti.be (Dovecot) with LMTP id yYQGJSoKMFnMFwAAUOefaQ
+	for <contact@wt1.ephec-ti.be>; Thu, 01 Jun 2017 12:35:54 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by mail.wt1.ephec-ti.be (Postfix) with ESMTP id 8AE075E0F3F
+	for <contact@wt1.ephec-ti.be>; Thu,  1 Jun 2017 12:35:54 +0000 (UTC)
+X-Virus-Scanned: Debian amavisd-new at wt1.ephec-ti.be
+Authentication-Results: mail.wt1.ephec-ti.be (amavisd-new);
+	dkim=pass (2048-bit key) header.d=gmail.com
+Received: from mail.wt1.ephec-ti.be ([127.0.0.1])
+	by localhost (mail.wt1.ephec-ti.be [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id n2aFQhrBfKMR for <contact@wt1.ephec-ti.be>;
+	Thu,  1 Jun 2017 12:35:34 +0000 (UTC)
+Received-SPF: Pass (sender SPF authorized) identity=mailfrom; client-ip=209.85.215.51; helo=mail-lf0-f51.google.com; envelope-from=he201287@gmail.com; receiver=contact@wt1.ephec-ti.be 
+Received: from mail-lf0-f51.google.com (mail-lf0-f51.google.com [209.85.215.51])
+	by mail.wt1.ephec-ti.be (Postfix) with ESMTPS id C08365E04EA
+	for <contact@wt1.ephec-ti.be>; Thu,  1 Jun 2017 12:35:32 +0000 (UTC)
+Received: by mail-lf0-f51.google.com with SMTP id c184so20861763lfe.2
+        for <contact@wt1.ephec-ti.be>; Thu, 01 Jun 2017 05:35:32 -0700 (PDT)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:in-reply-to:references:from:date:message-id:subject:to;
+        bh=gRmv2A1Jkn11HTuUHc3TRYI0p6l2V2oFtnxnxlUosew=;
+        b=lMRsTXM+V1c2qjT1UuHpFWz7vFOCjVPi9a0Uh/LhQJRtCorGdtUMmjENN/al0HT++O
+         NfFlWXGGpMTWe8ficgk1zbTU/xOYn4LUjlp1JvH+2n8ikWFO83xB8QK1+Lw95m/KneiJ
+         EO2SkXG06WEqxTYrAXw8a55sc1QDzeIZNezijX31xNP8B8weCRwoUmONKK7YenpucUEH
+         L7IGVA2NDM0pyHzgCw2K8j25upo4aS+IESsk8DHnpF4/5xU8i8XoSVdUgcbQ2T8dzHDu
+         9GCMI1MErRz/TfgZD4MEAl3CdLJ2HllrUP55PM/8YDnBxU4HRTOJiyBFQFI7jNqhy8HG
+         pj9g==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:in-reply-to:references:from:date
+         :message-id:subject:to;
+        bh=gRmv2A1Jkn11HTuUHc3TRYI0p6l2V2oFtnxnxlUosew=;
+        b=cibea6V6x8q5qTZSjjvW+OEq5ti6SoG/yqjy3u982/1tDmWl2HMFfvT/8vCFXmGwt+
+         k83kublryCkvV0kuinPIfkJFePNaZNEB3HJxCoq+tuKnovXI/ZdFiPr4NquYY5N0slLE
+         WNHOtRLjtdgXc6AYx29AsefsuVR+4c1tUqWYu+fKv60iyIN6CWlbMB3a6GmXdSy9fsYy
+         WhRS4f6OFqW6343eaLhDVTOhlWm7DnXwycfzxlbojsDdrx/VyZq5Lx9froyaVZZE/Fug
+         t3Po0omge6DktO9Fk7I8w+JVctObu6EMcFCQ3mUhsK4Z5SCEjVXYTl7ZSu7LITmd3FXv
+         sN4Q==
+X-Gm-Message-State: AODbwcDIhwehD7+N7BfiYeb+oKaLF4CTJCuK0PrqT+vcyIlzkFnjv66d
+	W+rOIYTj13Gju9m1mO/3aLmXA5LLXg==
+X-Received: by 10.80.152.9 with SMTP id g9mr1658193edb.10.1496320531179; Thu,
+ 01 Jun 2017 05:35:31 -0700 (PDT)
+MIME-Version: 1.0
+Received: by 10.80.165.74 with HTTP; Thu, 1 Jun 2017 05:35:30 -0700 (PDT)
+In-Reply-To: <4c9ca27a-f187-f85f-86d8-6e495164be09@wt1.ephec-ti.be>
+References: <4c9ca27a-f187-f85f-86d8-6e495164be09@wt1.ephec-ti.be>
+From: J-b Bonh <he201287@gmail.com>
+Date: Thu, 1 Jun 2017 14:35:30 +0200
+Message-ID: <CAP943mB2HzybxNFiyUbkHCQ6raOOpvODSUAXsYUZJtv0JUpYuA@mail.gmail.com>
+Subject: Re: TesteRe
+To: contact <contact@wt1.ephec-ti.be>
+Content-Type: multipart/alternative; boundary="f403045c07c4bb2d370550e545c5"
+
+--f403045c07c4bb2d370550e545c5
+Content-Type: text/plain; charset="UTF-8"
+
+YOLO REEEE 1435
+
+On 1 June 2017 at 14:34, contact <contact@wt1.ephec-ti.be> wrote:
+
+> YOOOLLOOO
+>
+>
+
+--f403045c07c4bb2d370550e545c5
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">YOLO REEEE 1435</div><div class=3D"gmail_extra"><br><div c=
+lass=3D"gmail_quote">On 1 June 2017 at 14:34, contact <span dir=3D"ltr">&lt=
+;<a href=3D"mailto:contact@wt1.ephec-ti.be" target=3D"_blank">contact@wt1.e=
+phec-ti.be</a>&gt;</span> wrote:<br><blockquote class=3D"gmail_quote" style=
+=3D"margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex">YOOOLLOO=
+O<br>
+<br>
+</blockquote></div><br></div>
+
+--f403045c07c4bb2d370550e545c5--

@@ -1,0 +1,36 @@
+Return-Path: <FETCHMAIL-DAEMON@mail.wt1.ephec-ti.be>
+Delivered-To: contact1@wt1.ephec-ti.be
+Received: from mail.wt1.ephec-ti.be
+	by mail.wt1.ephec-ti.be (Dovecot) with LMTP id 9lr+J4CeGVkTBAAAUOefaQ
+	for <contact1@wt1.ephec-ti.be>; Mon, 15 May 2017 12:26:46 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by mail.wt1.ephec-ti.be (Postfix) with ESMTP id 2D27A5E0F2A
+	for <contact1@wt1.ephec-ti.be>; Mon, 15 May 2017 12:26:46 +0000 (UTC)
+Received: from mail.wt1.ephec-ti.be ([127.0.0.1])
+	by localhost (mail.wt1.ephec-ti.be [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id FAcw93YHsYTU for <contact1@wt1.ephec-ti.be>;
+	Mon, 15 May 2017 12:26:46 +0000 (UTC)
+Received: from mail.wt1.ephec-ti.be (localhost [IPv6:::1])
+	by mail.wt1.ephec-ti.be (Postfix) with ESMTP id 077F35E0532
+	for <contact1@wt1.ephec-ti.be>; Mon, 15 May 2017 12:26:46 +0000 (UTC)
+From: FETCHMAIL-DAEMON@mail.wt1.ephec-ti.be
+Date: Mon, 15 May 2017 12:26:46 +0000 (UTC)
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+Content-Type: text/plain; charset="US-ASCII"
+Subject: fetchmail authentication failed on contact1@mail.wt1.ephec-ti.be
+Message-Id: <20170515122646.077F35E0532@mail.wt1.ephec-ti.be>
+
+
+Fetchmail could not get mail from contact1@mail.wt1.ephec-ti.be.
+
+The attempt to get authorization failed.
+This probably means your password is invalid, but some servers have
+other failure modes that fetchmail cannot distinguish from this
+because they don't send useful error messages on login failure.
+
+The fetchmail daemon will continue running and attempt to connect
+at each cycle.  No future notifications will be sent until service
+is restored.
+-- 
+The Fetchmail Daemon

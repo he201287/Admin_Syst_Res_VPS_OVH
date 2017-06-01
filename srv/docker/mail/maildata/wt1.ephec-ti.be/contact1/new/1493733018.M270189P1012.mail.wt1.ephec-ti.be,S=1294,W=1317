@@ -1,0 +1,23 @@
+Return-Path: <contact@wt1.ephec-ti.be>
+Delivered-To: contact1@wt1.ephec-ti.be
+Received: from mail.wt1.ephec-ti.be
+	by mail.wt1.ephec-ti.be (Dovecot) with LMTP id wuf6D5qOCFn0AwAAUOefaQ
+	for <contact1@wt1.ephec-ti.be>; Tue, 02 May 2017 13:50:18 +0000
+Received: from localhost (localhost [127.0.0.1])
+	by mail.wt1.ephec-ti.be (Postfix) with ESMTP id 2BBCA5E0F08
+	for <contact1@wt1.ephec-ti.be>; Tue,  2 May 2017 13:50:18 +0000 (UTC)
+X-Quarantine-ID: <UJrbwHjCd_GM>
+X-Amavis-Alert: BAD HEADER SECTION, Missing required header field: "Date"
+Received: from mail.wt1.ephec-ti.be ([127.0.0.1])
+	by localhost (mail.wt1.ephec-ti.be [127.0.0.1]) (amavisd-new, port 10024)
+	with ESMTP id UJrbwHjCd_GM for <contact1@wt1.ephec-ti.be>;
+	Tue,  2 May 2017 13:50:18 +0000 (UTC)
+Received-SPF: None (no SPF record) identity=mailfrom; client-ip=151.80.119.160; helo=mail.wt1.ephec-ti.be; envelope-from=contact@wt1.ephec-ti.be; receiver=contact1@wt1.ephec-ti.be 
+Received: from mail.wt1.ephec-ti.be (160.ip-151-80-119.eu [151.80.119.160])
+	by mail.wt1.ephec-ti.be (Postfix) with ESMTP id 0861E5E0606
+	for <contact1@wt1.ephec-ti.be>; Tue,  2 May 2017 13:47:30 +0000 (UTC)
+Message-Id: <20170502135018.2BBCA5E0F08@mail.wt1.ephec-ti.be>
+Date: Tue,  2 May 2017 13:50:18 +0000 (UTC)
+From: contact@wt1.ephec-ti.be
+
+HELLO 
