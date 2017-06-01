@@ -1,44 +1,30 @@
 ## Exemple configuration POP3
 poll mail.wt1.ephec-ti.be proto POP3
         user 'contact' there with
-        password 'SteaKrEs0378'
+        password '****'
         is 'contact@wt1.ephec-ti.be'
         ssl
 ## Config IMAP
 poll mail.wt1.ephec-ti.be proto imap
-<<<<<<< HEAD
         user 'contact' there with
-        password 'SteaKrEs0378'
+        password '****'
         is 'contact@wt1.ephec-ti.be'
         ssl
 
 poll mail.wt1.ephec-ti.be proto POP3
         user 'b2b' there with
-        password 'YhK_378sTk'
+        password '****'
         is 'b2b@wt1.ephec-ti.be'
         ssl
 
 poll mail.wt1.ephec-ti.be proto POP3
         user 'empl1' there with
-        password 'mDpSwd_378_mpl1'
+        password '***'
         is 'empl1@wt1.ephec-ti.be'
         ssl
-=======
-	user '***'
-	pass '***'
-	is 'contact@wt1.ephec-ti.be'
-	ssl
->>>>>>> d44633f2ca31b9495aac2c42364ff6795ea56257
 
 poll mail.wt1.ephec-ti.be proto POP3
-<<<<<<< HEAD
         user 'empl2' there with
-        password 'mDpSwd_378_mpl2'
+        password '****'
         is 'empl2@wt1.ephec-ti.be'
         ssl
-=======
-	user '***' there with
-	password '***'
-	is 'contact1@wt1.ephec-ti.be'
-	ssl
->>>>>>> d44633f2ca31b9495aac2c42364ff6795ea56257
