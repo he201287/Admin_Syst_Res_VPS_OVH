@@ -1,0 +1,13 @@
+; ----- La mise en place du trunk IAX pour créer une passerelle entre deux serveurs Asterisk -----
+[trunk-Asterisk2]
+type=peer
+trunk=yes
+secret=*****
+username=steffi
+host=*.*.*.* 			; l'adresse IP du serveur
+qualify=yes
+
+[user]
+type=user
+secret=*****
+context=trunk

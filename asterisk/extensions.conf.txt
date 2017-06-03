@@ -1,0 +1,42 @@
+
+;------------- contexte publique joignable depuis "contact@wt1.ephec-ti.be" ---------------
+[public]
+exten => contact,1,GoTo(employe,102,1) ; l'appel aboutira sur le poste de la secretaire
+
+
+
+;------------ contexte employe joignable depuis toutes les extensions dans le contexte ----
+
+[employe]
+;----- secretaire -----
+exten => 102,1,Dial(SIP/secretaire)
+
+
+;----- directeur -----
+exten => 101,1,Dial(SIP/secretaire)
+
+
+; ----- Les ouvriers -----
+exten => 201,1,Dial(SIP/ouvrier1)
+exten => 202,1,Dial(SIP/ouvrier2)
+
+
+; ----- Le numéro communs des comptable -----
+exten => 300,1,Dial(SIP/comptable1&SIP/comptable2&SIP/comptable3&SIP/comptable4)
+
+
+; ----- Les comptables -----
+exten => 301,1,Dial(SIP/comptable1)
+exten => 302,1,Dial(SIP/comptable2)
+exten => 303,1,Dial(SIP/comptable3)
+exten => 304,1,Dial(SIP/comptable4)
+
+
+; ----- Les service commercial -----
+exten => 401,1,Dial(SIP/commerce1)
+exten => 402,1,Dial(SIP/commerce2)
+
+
+; ----- le contexte qui permettra le trunk entre les deux implantations -----
+[trunk]
+exten => _1XXX,1,Dial(IAX2/trunk-Asterisk2/${EXTEN},20)

@@ -1,0 +1,108 @@
+
+[general]
+hasvoicemail=yes
+callwaiting=yes
+threewaycalling=yes
+transfer=yes
+cancallforward=yes
+allowguest=yes
+context=public                 ; Default context for incoming calls
+udpbindaddr=0.0.0.0             ; IP address to bind UDP listen socket to (0.0.0.0 binds to all)
+tcpbindaddr=0.0.0.0             ; IP address for TCP server to bind to (0.0.0.0 binds to all interfaces)
+bindaddr=0.0.0.0
+nat=force_rport
+hassip=yes
+hasiax=yes
+deny=*.*.*.* *.*.*.*
+srvlookup=yes
+
+;------------------------ les parametres communs a tous les employes ----------------------
+[employe](!)
+type=friend
+host=dynamic
+dtmfmode=rfc2833
+disallow=all
+allow=ulaw
+qualify=yes
+qualifyfreq=600
+context=employe
+
+; ----- Les parametres specifiques au directeur -----
+[direction](employe)
+fullname=direction
+username=direction
+secret=*****
+
+; ----- Les parametres specifiques a la secretaire -----
+[secretaire](employe)
+fullname=secretaire
+username=secretaire
+secret=*****
+
+
+
+; ----- Les parametres specifiques aux ouvriers -----
+[ouvrier1](employe)
+fullname=ouvrier1
+username=ouvrier1
+secret=*****
+
+[ouvrier2](employe)
+fullname=ouvrier2
+username=ouvrier2
+secret=*****
+
+
+; ----- Les parametres specifiques aux service comptable-----
+[serviceComptable](employe)
+fullname=serviceComptable
+username=serviceComptable
+secret=*****
+
+[comptable1](employe)
+fullname=comptable1
+username=comptable1
+secret=*****
+
+[comptable2](employe)
+fullname=comptable2
+username=comptable2
+secret=*****
+
+[comptable3](employe)
+fullname=comptable3
+username=comptable3
+secret=*****
+
+[comptable4](employe)
+fullname=comptable4
+username=comptable4
+secret=*****
+context=employe
+
+
+; ----- Les parametres specifiques au service commercial -----
+[commerce1](employe)
+fullname=commerce1
+username=commerce1
+secret=*****
+
+[commerce2](employe)
+fullname=commerce2
+username=commerce2
+sercret=*****
+
+
+
+; ----- Un utilisateur test ne faisant pas partie du contexte employe -----
+[test]
+type=friend
+host=dynamic
+dtmfmode=rfc2833
+disallow=all
+allow=ulaw
+qualify=yes
+qualifyfreq=600
+fullname=test
+username=test
+secret=*****
